@@ -74,6 +74,9 @@ class Q3{
             graph.edge[i].weight = sc.nextInt();
         }
         sc.close();
-        graph.Sol(graph, 0); 
+        for(int i=0;i<V;i++){
+            System.out.println("For"+ i +"th vertex:");
+            graph.Sol(graph, i);
+        }
     } 
-} 
+}
