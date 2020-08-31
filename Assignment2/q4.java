@@ -1,13 +1,12 @@
-import java.util.Scanner;
-public class Q24 {
+public class Main {
+
     public static void main(String[] args) {
-        int sum=0, i=1;
-        for(; sum<Integer.MAX_VALUE && i<Integer.MAX_VALUE; i++) {
-            if(sum+i>=Integer.MAX_VALUE)
-                break;
+        long sum=0, i=1;
+        for(; i<Integer.MAX_VALUE; i++) {
             sum+=i;
             if(sum==i*i)
                 System.out.println(i);
         }
+        System.out.println("The program ended at "+i);
     }
 }
