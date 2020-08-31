@@ -35,8 +35,13 @@ public class Q26 {
                             " Program entered into self destruct mode.");
                     break;
                 }
-                if (nk % 2 == 0)
+                if (nk % 2 == 0){
+                    if (nk==0){
+                        System.out.println("Not valid input");
+                        break;
+                    }
                     nk /= 2;
+                }
                 else {
                     if (nk * 3 + 1 > Integer.MAX_VALUE) {
                         System.out.println(nk + "*3+1 is beyond integer limits." +
