@@ -18,9 +18,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 
-import static javaapplication2.Main.Test.isValid;
+import static javaapplication2.JavaApplication2.Test.isValid;
 
-public class Main {
+public class JavaApplication2 {
 
     public static void main(String[] args) throws IOException {
         Set<String> done = new HashSet<>();
@@ -30,16 +30,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         input = sc.nextLine();
         remaining.add(input);
-
         XSSFWorkbook book = new XSSFWorkbook();
-        XSSFSheet sheettext = book.createSheet("all text from link");
-        XSSFSheet sheettag = book.createSheet("a tags information");
-        XSSFSheet sheetFaculty = book.createSheet("faculty information");
+        XSSFSheet sheettext = book.createSheet("Text");
+        XSSFSheet sheettag = book.createSheet("Tags");
+        XSSFSheet sheetFaculty = book.createSheet("Faculty Info");
         XSSFRow row;
-
+        
         Map<String, Object[]> Infoobtained = new TreeMap<>();
-        Infoobtained.put("1", new Object[]{"link", "a tag name"});
-
+        Infoobtained.put("1", new Object[]{"Link", "Tag"});
+        
         int sn = 2;
         int sheettextRow = 0;
         int sheetFacultyRow = 0;
