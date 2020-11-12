@@ -14,7 +14,6 @@ public static void main(String... args) {
         Thread thread = new Thread() {
             public void run() {
                 int x = 0;
-                int y,z;
                 while (x<101) {
                     x = x + 1;
                     System.out.print(x + " ");
