@@ -13,11 +13,11 @@ public class Q1{
 public static void main(String... args){
         Thread thread=new Thread(){
             public void run(){
-                int x=0;
-                while(x<101){
-                    x++;
-                    System.out.print(x+" ");
-                    if((x%10)==0)
+                int count=0;
+                while(count<101){
+                    count++;
+                    System.out.print(count+" ");
+                    if((count%10)==0)
                     {   System.out.println();
                         System.out.println("10 second message");
                         System.out.println();
